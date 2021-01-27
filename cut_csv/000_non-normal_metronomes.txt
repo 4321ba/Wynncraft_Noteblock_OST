@@ -1,0 +1,18 @@
+Original metronome value can be easily identified by the intro volume change (it is dependent), these are the ones that noteblock_music_utility.py can't identify correctly:
+
+name                                          metronome value  approximately how many notes there are with that delay
+134_An_Interesting_Find_Discovery_Jingle      6 instead of 12  there is no 6
+
+These were previously identified badly but now they're ok, examples of pieces that end with a "gap-making / filler note":
+065_Antiquated_Ancestry_Dead_Island           4 instead of 8   there is one 4
+098_Dance_of_Memory_Caritat_Manor             4 instead of 8   there are quite a few 4s
+100_Lights_Hymn_Light_Realm                   4 instead of 8   there is one 4
+158_Funeral_Service_at_10_OClock_Deaths_Realm 4 instead of 8   there is one 4
+
+
++extra, not perfect:
+147_Genesis_of_the_End_Boss_Battle_12 part3-4 may be laggy
+148_A_Day_to_Remember_Boss_Battle_13 missing part1's ending
+152_A_Family_Fractured_570_AP missing part3's ending
+
+And volume is pretty messed up.
