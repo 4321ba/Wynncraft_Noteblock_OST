@@ -8,7 +8,7 @@ For Scores and MIDI files not included here see Xeoran's work: https://musescore
 
 The source csv files found in `cut_csv` were recorded with https://github.com/4321ba/noteblock_music_yoinker and antilagged, so there is no lag. Sadly, there's a bug https://forums.wynncraft.com/threads/music-note-volume-is-messed-up.281761/ that the NBS player plays the wrong volume sometimes, so this is reflected here as well. You can find some pieces that consist of more than one part, you can find the source in `loopable_csv` for them. For NBS and MIDI they are merged together.
 
-NBS files are in the `nbs` folder. I may make them later so they're not just organized by instrument, but by note volume as well. Please do NOT copy these to play on your Minecraft server without the Wynncraft team's approval. (I think it's fine if you play it to your friend e.g. just don't compete with Wynncraft.)
+NBS files are in the `nbs` folder. I may make them later so they're not just organized by instrument, but by note volume as well. Please do NOT copy these to play on your Minecraft server without the Wynncraft team's approval. (I think it's fine if you play it to your friend e.g. just don't compete with Wynncraft.) Also, see `Sounds.zip` for the Wynncraft noteblock sounds for ONBS from the 1.19 resource pack, cut shorter (no silence at the end) so all notes can be played back even with the crazier pieces (khmm CtC).
 
 In the `musescore_midi` folder you can find the MIDI files that are best opened in MuseScore to create a score / sheet music from them. This is achieved by making the notes really short (2/20 sec or 3/20 sec) so they don't overlap with each other. MuseScore can then lengthen it if it is needed.
 
