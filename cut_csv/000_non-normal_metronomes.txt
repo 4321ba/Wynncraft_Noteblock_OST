@@ -1,7 +1,9 @@
-Original metronome value can be easily identified by the intro volume change (it is dependent), these are the ones that noteblock_music_utility.py can't identify correctly:
+Original metronome value can be easily identified by the intro volume change (it is dependent), and noteblock_music_utility.py can currently identify all files' metronomes correctly
 
-name                                          metronome value  approximately how many notes there are with that delay
-134_An_Interesting_Find_Discovery_Jingle      6 instead of 12  there is no 6
+these (and a couple others) have a separate if statement in the utility script to auto-recognize 4 and 6 instead of 8 and 12:
+name                                           metronome value  approximately how many notes there are with that delay
+134_An_Interesting_Find_Discovery_Jingle       6 instead of 12  there is no 6
+157_Simplified_What_Must_Be_Done_The_Sacrifice 6 instead of 12  there is no 6 (because of the simplification)
 
 These were previously identified badly but now they're ok, examples of pieces that end with a "gap-making / filler note":
 065_Antiquated_Ancestry_Dead_Island           4 instead of 8   there is one 4
@@ -10,9 +12,31 @@ These were previously identified badly but now they're ok, examples of pieces th
 158_Funeral_Service_at_10_OClock_Deaths_Realm 4 instead of 8   there is one 4
 
 
+These pieces' tempo is obscure and require the speed fine tuning:
+
+025_Defiled_Sanctity_Graveyard                1.00625(theoretically) cuz its metronome is 7, but it is 5.75 tps
+027_Modified_Black_Road_Nostalgia_Black_Road  0.9625
+053_Modified_High_Tides_Ocean_1               1.00625(theoretically) cuz its metronome is 7, but it is 5.75 tps
+060_Wings_of_Distrust_Avos_Theme              0.9625 5.5 tps again
+069_Lament_of_the_Decay_Gelibord              0.9625 metronome is 7, it is 5.5 tps
+087_Trodden-Down_Paths_Olux_Swamp             0.925(approximately) though the xavi upload is a bit faster, and it is the one without fine tuning
+091_Gylia_Shanty_Cinfras_County               ? though the xavi upload is a bit faster, at (normal) 6.75 tps instead of 6 - 6.25 tps
+160_Earthquake_Boss_Battle_14                 0.9
+161_Feared_by_Earth_Nest_of_the_Grootslangs   1.0 no fine tuning needed, but the metronome is 5 (= 8 tps) which isn't usual
+164_Face_of_Extinction_Boss_Battle_17         0.9
+167_Burning_Encounter_Boss_Battle_16          0.9
+169_Enter_the_Hero_Siegfried_Fanfare          0.9
+152_Part_1_A_Family_Fractured_570_AP          0.96875 (it is precise) = 31/32 btw
+152_Part_4_A_Family_Fractured_570_AP          0.96875
+
+all pieces that have a metronome of 6 should have a fine tuning of 1.0125
+
+
 +extra, not perfect:
 147_Genesis_of_the_End_Boss_Battle_12 part3-4 may be laggy
 148_A_Day_to_Remember_Boss_Battle_13 missing part1's ending
 152_A_Family_Fractured_570_AP missing part3's ending
 
-And volume is pretty messed up.
+135_Party_Blues_Party_Bomb is reverse-engineered, however it seems pretty good perfectness-wise
+
+And volume is pretty messed up because of the bug.
