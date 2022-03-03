@@ -58,3 +58,5 @@ mv cut_csv/*.mid melodic_percussion_midi/
 ./nbs_converter.py cut_csv/152_Part_1_A_Family_Fractured_570_AP.csv -f 0.96875
 ./nbs_converter.py cut_csv/152_Part_4_A_Family_Fractured_570_AP.csv -f 0.96875
 mv cut_csv/*.nbs nbs/
+
+node rename.js
