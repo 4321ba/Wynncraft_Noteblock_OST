@@ -1,3 +1,13 @@
+#!/usr/bin/env node
+
+/*
+
+    The OST renamer script. Takes all the files from the converter
+    and replaces the underscores with spaces, and also removes the
+    track number from the file name.
+
+*/
+
 const fs = require("fs");
 const path = require("path");
 
