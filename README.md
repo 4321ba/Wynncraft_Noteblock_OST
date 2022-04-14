@@ -30,4 +30,7 @@ good for playing all the midi files (with normal or with melodic percussion) fou
 
 You can also try to generate the midi files and the nbs files from the csv files, using `convert.sh`.
 
+There are alternative midi files in `Wynncraft_Noteblock_OST_layered_volumed_midis.zip`, there, the notes are on separate channels based on the volume. Though not all volumes are on different channels, because there are not enough channels (max 16).  
+The midis in `Wynncraft_Noteblock_OST_separated_instruments_midis.zip` are for every instrument in a completely separate file, and in every file every volume level (max 10) is on separate channel too. (iirc)
+
 If something feels wrong, be sure to open an issue!
